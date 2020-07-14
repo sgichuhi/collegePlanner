@@ -21,21 +21,21 @@ if (isset($_SESSION['customer_id'])) {
           break;
         }
       } else {
-        echo "<div class='alert alert-primary alert-dismissible'>Please enter your email and password to log in.</div>";
+        echo "<div class='alert alert-primary alert-dismissible'>Please enter your username and password to log in.</div>";
       }
       ?>
-      <!-- Email -->
+      <!-- Username -->
       <div class="form-group row">
-        <label for="email_id" class="col-sm-2">Email</label>
+        <label for="username" class="col-sm-2">Username</label>
         <div class= "col-md-6">
-          <input type="email" class="form-control" id="email_id" name="email_id" required>
+          <input type="text" class="form-control" id="username" name="username" required>
         </div>
       </div>
       <!-- Password -->
       <div class="form-group row">
-        <label for="pw" class="col-sm-2">Password</label>
+        <label for="password" class="col-sm-2">Password</label>
         <div class= "col-md-6">
-          <input type="password" class="form-control" id="pw" name="pw" required>
+          <input type="password" class="form-control" id="password" name="password" required>
         </div>
       </div>
 

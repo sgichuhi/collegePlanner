@@ -7,7 +7,6 @@ $action = isset($_REQUEST['action']) ? $_REQUEST['action'] : null;
 $options = array (
     'signup' => 'signup',
     'login' => 'login',
-    'loanapp' => 'loanapp',
     'references' => 'references',
     'editprofile' => 'editprofile',
     'logout' => 'logout'
@@ -21,13 +20,13 @@ if (array_key_exists($action, $options)) {
 }
 
 //Valid Password
-function validPassword($pw) {
-  if (!preg_match_all('$\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])(?=\S*[\W])\S*$', $pw)) {
-    return false;
-  } else {
-    return true;
-  }
-}
+// function validPassword($pw) {
+//   if (!preg_match_all('$\S*(?=\S{8,})(?=\S*[a-z])(?=\S*[A-Z])(?=\S*[\d])(?=\S*[\W])\S*$', $pw)) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
 
 //Sign Up Form
 function signup() {
